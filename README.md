@@ -30,6 +30,7 @@ barplot(Personal$Score_of_Dedication, names.arg = Personal$Religion, xlab ="Reli
 
 
 ggplot(mapping=aes(x=Personal$Score_of_Dedication, y=Personal$Ab_ill)) + geom_point()
+ggplot(mapping=aes(x=Personal$Score_of_Dedication, y=Personal$Ab_ill)) + geom_point(color='blue') + geom_smooth(method = "lm", formula = y~x, color='green')
 
 Lin_Reg <- lm(Personal$Ab_ill ~ Personal$Score_of_Dedication)
 summary(Lin_Reg)
