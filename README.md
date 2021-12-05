@@ -16,6 +16,8 @@ In the visualization comparing 'Score of dedication' and '%Ab_ill', I did not in
 information around this category. 
 
 
+
+
 R Code:
 
 library(readr)
@@ -31,6 +33,12 @@ ggplot(mapping=aes(x=Personal$Score_of_Dedication, y=Personal$Ab_ill)) + geom_po
 
 Lin_Reg <- lm(Personal$Ab_ill ~ Personal$Score_of_Dedication)
 summary(Lin_Reg)
+
+
+
+Visualizations:
+
+The visualization presented in the R
 
 
 
