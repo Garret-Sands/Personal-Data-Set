@@ -6,12 +6,12 @@ with-in the confines of the United States. I wanted to know how religions differ
 controversal topics. Once I came across data that polled abortion beliefs I knew that I 
 had found what I wanted.
 
-The category 'Score of dedication' was constructed from the average of all percentage categories 
-collected from each religion in the "Raw Data" page. Once formed, the 'Score of dedication' was 
+The category 'Score_of_dedication' was constructed from the average of all percentage categories 
+collected from each religion in the "Raw Data" page. Once formed, the 'Score_of_dedication' was 
 juxtaposed next to the percent of people who 'believe abortion should be illegal all/most of the time'.
 This wording was from the pewforum poll. 
 
-In the visualization comparing 'Score of dedication' and '%Ab_ill', I did not include the
+In the visualization comparing 'Score_of_dedication' and 'Ab_ill', I did not include the
 'Unaffiliated'. I excluded this category because of its status as an outlier and the unkown 
 information around this category. 
 
@@ -34,11 +34,16 @@ ggplot(mapping=aes(x=Personal$Score_of_Dedication, y=Personal$Ab_ill)) + geom_po
 Lin_Reg <- lm(Personal$Ab_ill ~ Personal$Score_of_Dedication)
 summary(Lin_Reg)
 
+# R squared: 0.81
 
 
-Visualizations:
+Visualization and Analysis:
 
-The visualization presented in the R
+The visualization presented in the Rplot page shows the correlation between the constructed
+score of dedication and the percentage of adults who believe abortion should be illegal in
+all/most cases. A linear regression function "lm()" was used in order to gather information
+on the apparent correlation between the two said variables(the R squared value). 
+
 
 
 
