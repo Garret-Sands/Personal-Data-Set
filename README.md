@@ -16,3 +16,25 @@ In the visualization comparing 'Score of dedication' and '%Ab_ill', I did not in
 information around this category. 
 
 
+R Code:
+
+library(readr)
+Personal <- read_csv("C:/Users/Garret's Laptop/OneDrive/Desktop/Personal.txt")
+View(Personal)
+
+library(ggplot2)
+barplot(Personal$Score_of_Dedication, names.arg = Personal$Religion, xlab ="Religion", 
+        ylab ="Score of Dedication", col ="green")
+
+
+ggplot(mapping=aes(x=Personal$Score_of_Dedication, y=Personal$Ab_ill)) + geom_point()
+
+Lin_Reg <- lm(Personal$Ab_ill ~ Personal$Score_of_Dedication)
+summary(Lin_Reg)
+
+
+
+
+
+
+
