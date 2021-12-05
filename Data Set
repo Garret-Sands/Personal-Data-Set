@@ -1,13 +1,13 @@
-Religion, Percentage of weekly service attendance
-Jehovah Witness, 82
-Morman, 76
-Historical Black churches, 59
-Evangelical, 58
-Catholic, 41 
-Muslim, 40
-Mainline Church, 35
-Orthodox, 34
-Hindu, 23
-Buddhist, 17
-Jewish, 16
-Unaffiliated, 5
+Religion, Percentage of weekly service attendance, Importance of religion(Very important), Prayer(Daily)
+Jehovah Witness, 82, 90, 90
+Morman, 76, 84, 85
+Historical Black churches, 59, 85, 80
+Evangelical, 58, 79, 79
+Catholic, 41, 58, 59 
+Muslim, 40, 64, 69
+Mainline Church, 35, 53, 54
+Orthodox, 34, 52, 57
+Hindu, 23, 26, 51
+Buddhist, 17, 33, 43
+Jewish, 16, 35, 29
+Unaffiliated, 5, 13, 20
